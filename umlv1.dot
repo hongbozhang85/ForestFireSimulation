@@ -1,0 +1,37 @@
+# generated from /usr/share/kde4/apps/umbrello/layouts/class-export.desktop
+digraph G {
+	graph [splines=polyline,rankdir=TB,outputorder=nodesfirst,ranksep=0.5,nodesep=0.5];
+"YfFyhzGxwTCv" [shape=box,label="Forest\n- wind : Cartesian\n- trees : Trees\n- embers : Embers\n+ getWind() : Cartesian",width="2.125",height="0.972222"];
+"r2knVxgU60nI" [shape=box,label="Cartesian\n- x : double\n- y : double\n+ set(x : double, y : double)\n+ get() : Cartesian\n+ add(deltaX : double, deltaY : double)",width="3.45833",height="1.16667"];
+"d5E1VM3Ujl8l" [shape=box,label="Trees\n- treesArray : Tree\n- numOfTree : int",width="1.65278",height="0.680556"];
+"PGmeNBLzGZ0j" [shape=box,label="Item\n- position : Cartesian\n- radius : double\n+ getPosition() : Cartesian",width="2.34722",height="0.777778"];
+"u0kGaKRz5bLA" [shape=box,label="Ember\n- diffusion : double\n- speed : Cartesian\n- drawEmber : ShowEmber\n- forest : Forest\n+ calcSpeed(forest : Forest)",width="2.58333",height="1.16667"];
+"rfEEay0eNKCQ" [shape=box,label="Tree\n- states : int\n- drawTree : Show\n- emberPassBy : int",width="1.76389",height="0.875"];
+"gYTWKKPHhQ37" [shape=box,label="«interface»\nShow\n+ showFigure()",width="1.40278",height="0.680556"];
+"3wsiMtqR9QoN" [shape=box,label="ShowTreeNoFire",width="1.69444",height="0.388889"];
+"ZG0QiAc49FXZ" [shape=box,label="ShowTreeSomeFire",width="1.95833",height="0.388889"];
+"gjm0ZW2Wt6dU" [shape=box,label="ShowTreeLotFire",width="1.73611",height="0.388889"];
+"7swKSo4YhKUh" [shape=box,label="ShowTreeBurnt",width="1.59722",height="0.388889"];
+"EyzX1QIvvbUj" [shape=box,label="ShowEmber",width="1.26389",height="0.388889"];
+"TmM256MgLAVo" [shape=box,label="Embers\n- emberArray : Ember",width="1.97222",height="0.486111"];
+"xS8GEHXKCq6u" [shape=box,label="Board\n- forest : Forest",width="1.44444",height="0.486111"];
+"YfFyhzGxwTCv" -> "r2knVxgU60nI" [weight=0.001,arrowhead=diamonds,label="",headlabel="+wind  ",taillabel="  "];
+"PGmeNBLzGZ0j" -> "r2knVxgU60nI" [weight=0.001,arrowhead=diamonds,label="",headlabel="+position  ",taillabel="  "];
+"PGmeNBLzGZ0j" -> "rfEEay0eNKCQ" [weight=1.0,arrowtail=onormal,dir=back,label="",headlabel="  ",taillabel="  "];
+"gYTWKKPHhQ37" -> "3wsiMtqR9QoN" [weight=0.001,arrowhead=none,label="",headlabel="  ",taillabel="  "];
+"gYTWKKPHhQ37" -> "ZG0QiAc49FXZ" [weight=0.001,arrowhead=none,label="",headlabel="  ",taillabel="  "];
+"gYTWKKPHhQ37" -> "gjm0ZW2Wt6dU" [weight=0.001,arrowhead=none,label="",headlabel="  ",taillabel="  "];
+"gYTWKKPHhQ37" -> "7swKSo4YhKUh" [weight=0.001,arrowhead=none,label="",headlabel="  ",taillabel="  "];
+"gYTWKKPHhQ37" -> "EyzX1QIvvbUj" [weight=0.001,arrowhead=none,label="",headlabel="  ",taillabel="  "];
+"rfEEay0eNKCQ" -> "gYTWKKPHhQ37" [weight=0.001,arrowhead=diamonds,label="",headlabel="+drawTree  ",taillabel="  "];
+"PGmeNBLzGZ0j" -> "u0kGaKRz5bLA" [weight=1.0,arrowtail=onormal,dir=back,label="",headlabel="  ",taillabel="  "];
+"u0kGaKRz5bLA" -> "r2knVxgU60nI" [weight=0.001,arrowhead=diamonds,label="",headlabel="+speed  ",taillabel="  "];
+"u0kGaKRz5bLA" -> "EyzX1QIvvbUj" [weight=0.001,arrowhead=diamonds,label="",headlabel="+drawEmber  ",taillabel="  "];
+"d5E1VM3Ujl8l" -> "rfEEay0eNKCQ" [weight=0.001,arrowhead=diamonds,label="",headlabel="+treesArray  ",taillabel="  "];
+"TmM256MgLAVo" -> "u0kGaKRz5bLA" [weight=0.001,arrowhead=diamonds,label="",headlabel="+emberArray  ",taillabel="  "];
+"u0kGaKRz5bLA" -> "YfFyhzGxwTCv" [weight=0.001,arrowhead=diamonds,label="",headlabel="+forest  ",taillabel="  "];
+"YfFyhzGxwTCv" -> "d5E1VM3Ujl8l" [weight=0.001,arrowhead=diamonds,label="",headlabel="+trees  ",taillabel="  "];
+"YfFyhzGxwTCv" -> "TmM256MgLAVo" [weight=0.001,arrowhead=diamonds,label="",headlabel="+embers  ",taillabel="  "];
+"xS8GEHXKCq6u" -> "YfFyhzGxwTCv" [weight=0.001,arrowhead=diamonds,label="",headlabel="+forest  ",taillabel="  "];
+
+}
